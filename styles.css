@@ -1,0 +1,30 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.screenshots {
+    width: 30vh;
+    border-radius: 30px;
+}
+
+.screenshotHorizontalGroup {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video {
+    width: 50%;
+    border-radius: 30px;
+}
+
+.search {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
