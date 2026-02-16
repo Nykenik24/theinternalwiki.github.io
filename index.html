@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="google-site-verification" content="qod5zVCg5FMTXiDOMV059oShb1NCLdOYiyN4EiuohOU" />
     <meta name="algolia-site-verification"  content="0F07B4466579FD79" />
+    <link rel="stylesheet" href="https://unpkg.com/@algolia/sitesearch@latest/dist/search.min.css" />
+    <script src="https://unpkg.com/@algolia/sitesearch@latest/dist/search.min.js"></script>
+      <style>
+    .ais-PoweredBy,
+    .algolia-powered,
+    .ss-powered-by,
+    #search a[href*="algolia.com"] {
+      display: none !important;
+    }
+  </style>
 </head>
 <body>
+
+    <div id="mainLogoDiv">
+    <img src="assets/TheInternalWikiTRANSPARENTBG.png" id="mainLogo">
+    </div>
+
     <h1 class="center">The Internal Wiki</h1>
 
     <p class="center">The wiki dedicated to everything related to internal software, including but not limited to Apple internal</p>
@@ -18,11 +33,20 @@
     </h2>
 
 
-<div class="search">    
-<script async src="https://cse.google.com/cse.js?cx=d1c66ca50917148ac">
+
+<div id="search"></div>
+<script>
+  SiteSearch.init({
+    container: "#search",
+    applicationId: "IZSAR477TT",
+    apiKey: "b0856fe4ea5687107b6caa4d1a835de4",
+    indexName: "theinternalwiki_github_io_izsar477tt_pages",
+    attributes: {
+      primaryText: "title",
+    },
+    darkMode: false,
+  });
 </script>
-<div class="gcse-search"></div>
-</div>
 
 <a href="articles/AVKitRoutingService/index.html">AVKitRoutingService</a>
 <a href="articles/DockFolderViewService/index.html">DockFolderViewService</a>
